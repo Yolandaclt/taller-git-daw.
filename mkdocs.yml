@@ -1,1 +1,4 @@
-site_name: My Docs
+site_name: Proyecto PHP DAW
+theme: material
+nav:
+  - Inicio: index.md

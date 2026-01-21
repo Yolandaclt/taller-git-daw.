@@ -2,13 +2,17 @@ name: Documentación automática
 
 on:
   push:
-    branches: [ main, rama-colaborativa ]
+    branches: [ main, Principal, rama-colaborativa ]
 
 jobs:
   build-docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
       - name: Instalar MkDocs
         run: pip install mkdocs
       - name: Generar documentación

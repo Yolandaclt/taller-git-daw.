@@ -2,3 +2,5 @@ site_name: Proyecto PHP DAW
 theme: material
 nav:
   - Inicio: index.md
+  - Instalación: instalacion.md
+  - Estructura: estructura.md
